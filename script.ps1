@@ -79,7 +79,7 @@ else { "OK" }
 
 "===== HTTP Request ====="
 if ("$slack" -eq "ok") {
-Write-Host "$statuscodedesc" "$httpcode" -foregroundColor "green" }
+  Write-Host "$statuscodedesc" "$httpcode" -foregroundColor "green" }
 
 Stop-Transcript
 
