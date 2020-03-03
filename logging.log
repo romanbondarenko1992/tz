@@ -1,0 +1,39 @@
+﻿**********************
+Начало записи протокола Windows PowerShell
+Время начала: 20200303062018
+Имя пользователя: WEBSERVER\Администратор
+Пользователь RunAs: WEBSERVER\Администратор
+Компьютер: WEBSERVER (Microsoft Windows NT 6.3.9600.0)
+Ведущее приложение: C:\Windows\System32\WindowsPowerShell\v1.0\powershell_ise.exe
+ИД процесса: 3372
+PSVersion: 5.1.14409.1005
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.14409.1005
+BuildVersion: 10.0.14409.1005
+CLRVersion: 4.0.30319.34209
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Транскрибирование запущено, выходной файл C:\logging.log
+===== Check IIS role =====
+OK
+===== Check IIS service =====
+
+Џ®ЇлвЄ  § ЇгбЄ ...
+
+‘«г¦Ўл €­вҐа­Ґв  гбЇҐи­® § ЇгйҐ­л
+
+===== Check & Update WebApp =====
+Already up to date.
+OK
+===== Check IIS site =====
+OK
+===== Check IIS AppPool =====
+OK
+===== HTTP Request =====
+OK 200
+**********************
+Конец записи протокола Windows PowerShell
+Время окончания: 20200303062019
+**********************
