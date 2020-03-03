@@ -3,4 +3,5 @@
 - Powershell 5.0 (установил WMF 5.1)
 - GIT
 - ћодули дл€ Powershell(posh-git, WebAdministration)
+
 ¬ web.config опечатка в 21 строке, webhook не работал, дл€ теста создал свой workspace в Slack, скрин прилагаю
