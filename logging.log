@@ -1,11 +1,11 @@
 ﻿**********************
 Windows PowerShell transcript start
-Start time: 20200304225605
+Start time: 20200305011803
 Username: WORKGROUP\SYSTEM
 RunAs User: WORKGROUP\SYSTEM
 Machine: WIN-QF7SUH46TQO (Microsoft Windows NT 6.3.9600.0)
 Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NoProfile -File C:\script.ps1
-Process ID: 4060
+Process ID: 1344
 PSVersion: 5.1.14409.1005
 PSEdition: Desktop
 PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.14409.1005
@@ -16,6 +16,10 @@ PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
 **********************
 Transcript started, output file is C:\logging.log
+
+TaskPath                                       TaskName
+--------                                       --------
+\                                              ConfigWebApp
 ===== Check IIS role =====
 OK
 ===== Check IIS service =====
@@ -23,15 +27,55 @@ OK
 Attempting start...
 Internet services successfully started
 ===== Check & Update WebApp =====
-Already up to date.
-OK
+
+PSPath            : Microsoft.PowerShell.Core\FileSystem::C:\inetpub\wwwroot\we
+                    bapp
+PSParentPath      : Microsoft.PowerShell.Core\FileSystem::C:\inetpub\wwwroot
+PSChildName       : webapp
+PSDrive           : C
+PSProvider        : Microsoft.PowerShell.Core\FileSystem
+PSIsContainer     : True
+Name              : webapp
+Parent            : wwwroot
+Exists            : True
+Root              : C:\
+FullName          : C:\inetpub\wwwroot\webapp
+Extension         :
+CreationTime      : 3/5/2020 1:18:14 AM
+CreationTimeUtc   : 3/5/2020 9:18:14 AM
+LastAccessTime    : 3/5/2020 1:18:14 AM
+LastAccessTimeUtc : 3/5/2020 9:18:14 AM
+LastWriteTime     : 3/5/2020 1:18:14 AM
+LastWriteTimeUtc  : 3/5/2020 9:18:14 AM
+Attributes        : Directory
+Mode              : d-----
+BaseName          : webapp
+Target            : {}
+LinkType          :
+
+Cloning into 'C:\inetpub\wwwroot\webapp'...
 ===== Check IIS site =====
-OK
+
+Name         : website.local
+ID           : 1
+State        : Started
+PhysicalPath : C:\inetpub\wwwroot
+Bindings     : Microsoft.IIs.PowerShell.Framework.ConfigurationElement
+
 ===== Check IIS AppPool =====
-OK
+
+Name  : website.local
+State : Started
+
+
+Path             : /TestApp
+ApplicationPool  : website.local
+EnabledProtocols : http
+PhysicalPath     : C:\inetpub\wwwroot\webapp
+
 ===== HTTP Request =====
 OK 200
 **********************
 Windows PowerShell transcript end
-End time: 20200304225610
+End time: 20200305011906
 **********************
